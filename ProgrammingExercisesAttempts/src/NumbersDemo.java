@@ -12,6 +12,8 @@ public class NumbersDemo {
         System.out.println("Second Number is: " + numTwo);
 
         //pass value into methods
+        System.out.println();
+        System.out.println("--Start--");
         displayTwiceTheNumber(numOne);
         displayTwiceTheNumber(numTwo);
 
@@ -22,8 +24,8 @@ public class NumbersDemo {
         displayNumberPlusFive(numTwo);
 
         System.out.println("--Next Method--");
-//        displayNumberSquared(numOne);
-//        displayNumberSquared(numTwo);
+        displayNumberSquared(numOne);
+        displayNumberSquared(numTwo);
 
         System.out.println("--Finish--");
     }
@@ -53,6 +55,8 @@ public class NumbersDemo {
     //squaring given number
     public static void displayNumberSquared(int result)
     {
-
+        int newResult;
+        newResult = result * result;
+        System.out.println("This number squared is: " + newResult);
     }
 }
